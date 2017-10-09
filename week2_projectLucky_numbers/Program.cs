@@ -14,7 +14,7 @@ namespace week2_projectLucky_numbers
             do
             ////ask the user for a starting number for the lowest number in the number range//
             Console.WriteLine(" what is your lowest in the number range?");//
-            int userMinNum = int.Parse(Console.ReadLine());
+            int userMin = int.Parse(Console.ReadLine());
 
             ////ask the user max number in the range
 
