@@ -10,60 +10,67 @@ namespace week2_projectLucky_numbers
     {
         static void Main(string[] args)
         {
-            //vairables
 
-            //ask the user for a starting number for the lowest number in the number range//
-            Console.WriteLine("what is your lowest in the number range?");//
-            int userminNum = int.Parse(Console.ReadLine());
+            ////ask the user for a starting number for the lowest number in the number range//
+            Console.WriteLine(" what is your lowest in the number range?");//
+            int userMinNum = int.Parse(Console.ReadLine());
 
-            //ask the user max number in the range
+            ////ask the user max number in the range
 
             Console.WriteLine("what is the highest number in the range?");
-            int usermaxNum = int.Parse(Console.ReadLine());
+            int userMaxNum = int.Parse(Console.ReadLine());
 
-            // ask the user to gues the 6 numbers the user thinks will be the lucky numbers within the range//
-            //Console.WriteLine(" nice please choose six lucky numbers?");
-
+            //// ask the user to gues the 6 numbers the user thinks will be the lucky numbers within the range//
+            Console.WriteLine(" nice please choose six lucky numbers?");
 
             int[] guesNum = new int[6];
 
             for (int i = 0; i < guesNum.Length; i++)
+            {
+                guesNum[i] = int.Parse(Console.ReadLine());
+                Console.WriteLine(guesNum[i]);
+            }
+            if (guesNum[i] < userMinNum || guesNum[i] > userMaxNum)
+            {
+                Console.WriteLine("please enter valid number");
+                Console.ReadKey();
 
-                if (guesNum[i]>userminNum && guesNum[i]< usermaxNum +1)
-                {
-                    Console.WriteLine(" valid number");
-                    Console.Write("please continue");
-                    break;
+
                 }
-                else   
-                {
-                    Console.WriteLine("oops!  invalid ");
-                }
-                         
-                int[] randomGeneratorNum = new int[6];
-                Random rand = new Random();
-            int randomNumber = rand.Next();
+
+            Random rando = new Random();
+            Console.WriteLine(rando.Next(userMinNum, userMaxNum));
+
+
+
+
+
+
+        
+
+    }
+
+
+    }
+      }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
 
-                for (int i = 0; <guesNum.Length; i++)
-                {
-                if (j = 0 ; i<randomGeneratorNum.Length);
-                    {
 
-                    }
-                     randomNumber = rand.Next(userminNum, usermaxNum) + 1;
-                   
-                    Console.WriteLine("luckyNumbers", j);
-
-
-                }
-               
-
-
-
-
-            }
-
-            }
-        }
-    
